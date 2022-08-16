@@ -106,3 +106,13 @@ Great resources:
       - echopype  # it is actually on conda-forge
   ```
 - Note: pytorch has its own channel for `pytorch` and `torchvision`
+
+## Conda setup for multiple environments
+
+By default Jupyter doesn't know any conda environments in your conda ecosystem. It will only show the current environment to use as a kernel. In order to manage conda environment based kernels, [`nb_conda_kernels`](https://github.com/Anaconda-Platform/nb_conda_kernels) needs to be installed. `nb_conda_kernels` extension needs to be installed in **one** conda environment, and it will detect all the other conda environments. For conveniece, this package will be installed in a new `jupyterlab3` conda environment.
+
+```
+$ conda install -n jupyterlab3 -c conda-forge jupyterlab=3 nb_conda_kernels
+```
+
+Once `nb_conda_kernels` is installed, each time a conda environment is created, `ipykernel` package needs to be installed for the kernel manager to detect that environment. You'd need to use the `jupyterlab3` environment to spin up Jupyterlab so that the various conda environments can be used.

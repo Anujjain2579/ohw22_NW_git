@@ -1,6 +1,8 @@
 # Conda
 
-Great resource: Software Carpentry -- https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists
+Great resources:
+- OHW22 optional tutorial: [screen cast from @ocefpaf](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW22/optional/managing-conda-envs)
+- Software Carpentry: [Introduction to Conda for (Data) Scientists](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists)
 
 ## Make sure you have conda
 - `conda --version`
@@ -14,7 +16,7 @@ Great resource: Software Carpentry -- https://carpentries-incubator.github.io/in
 - Conda
   - Conda is an open source package and environment management system
   - Conda vs Miniconda vs Anaconda
-    ![conda_img](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/fig/miniconda_vs_anaconda.png)
+    <img src="https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/fig/miniconda_vs_anaconda.png" style="width:600px">
   - pre-built packages, cross platform, can use other package management tools such as pip
 
 ## Commands
@@ -62,10 +64,6 @@ Great resource: Software Carpentry -- https://carpentries-incubator.github.io/in
   ```
   $ conda remove --name basic-scipy-env --all
   ```
-- Creating an environment using an `environment.yml` file
-  ```
-  $ conda create --name ohw22 --file environment.yml
-  ```
 
 
 ## Others
@@ -82,3 +80,26 @@ Great resource: Software Carpentry -- https://carpentries-incubator.github.io/in
     - packages may be more up-to-date
     - it includes additional packages not available in `defaults`
 
+
+## Sharing environments
+- Creating an environment using an `environment.yml` file
+  ```
+  $ conda create --name ohw22 --file environment.yml
+  ```
+- What's in an environment file?
+  ```
+  name: my-test-env
+  
+  channels:
+    - conda-forge
+    - defaults
+
+  dependencies:
+    - ipython
+    - matplotlib
+    - pandas
+    - pip
+    - python=3.9
+    - scikit-learn
+  ```
+- Note: pytorch has its own channel for `pytorch` and `torchvision`

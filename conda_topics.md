@@ -1,6 +1,8 @@
 # Conda
 
-Great resource: Software Carpentry -- https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists
+Great resources:
+- OHW22 optional tutorial: [screen cast from @ocefpaf](https://github.com/oceanhackweek/ohw-tutorials/tree/OHW22/optional/managing-conda-envs)
+- Software Carpentry: [Introduction to Conda for (Data) Scientists](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists)
 
 ## Make sure you have conda
 - `conda --version`

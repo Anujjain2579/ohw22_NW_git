@@ -1,0 +1,13 @@
+name: my-test-env
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - ipython
+  - matplotlib
+  - pandas
+  - pip
+  - python=3.9
+  - scikit-learn

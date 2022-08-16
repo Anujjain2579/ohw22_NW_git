@@ -102,5 +102,7 @@ Great resources:
     - pip
     - python=3.9
     - scikit-learn
+    - pip:
+      - echopype  # it is actually on conda-forge
   ```
 - Note: pytorch has its own channel for `pytorch` and `torchvision`

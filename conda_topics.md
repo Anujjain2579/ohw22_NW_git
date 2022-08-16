@@ -62,10 +62,6 @@ Great resource: Software Carpentry -- https://carpentries-incubator.github.io/in
   ```
   $ conda remove --name basic-scipy-env --all
   ```
-- Creating an environment using an `environment.yml` file
-  ```
-  $ conda create --name ohw22 --file environment.yml
-  ```
 
 
 ## Others
@@ -82,3 +78,26 @@ Great resource: Software Carpentry -- https://carpentries-incubator.github.io/in
     - packages may be more up-to-date
     - it includes additional packages not available in `defaults`
 
+
+## Sharing environments
+- Creating an environment using an `environment.yml` file
+  ```
+  $ conda create --name ohw22 --file environment.yml
+  ```
+- What's in an environment file?
+  ```
+  name: my-test-env
+  
+  channels:
+    - conda-forge
+    - defaults
+
+  dependencies:
+    - ipython
+    - matplotlib
+    - pandas
+    - pip
+    - python=3.9
+    - scikit-learn
+  ```
+- Note: pytorch has its own channel for `pytorch` and `torchvision`

@@ -14,7 +14,7 @@ Great resource: Software Carpentry -- https://carpentries-incubator.github.io/in
 - Conda
   - Conda is an open source package and environment management system
   - Conda vs Miniconda vs Anaconda
-    ![conda_img](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/fig/miniconda_vs_anaconda.png)
+    <img src="https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/fig/miniconda_vs_anaconda.png" style="width:600px">
   - pre-built packages, cross platform, can use other package management tools such as pip
 
 ## Commands

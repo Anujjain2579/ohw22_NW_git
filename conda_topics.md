@@ -62,3 +62,23 @@ Great resource: Software Carpentry -- https://carpentries-incubator.github.io/in
   ```
   $ conda remove --name basic-scipy-env --all
   ```
+- Creating an environment using an `environment.yml` file
+  ```
+  $ conda create --name ohw22 --file environment.yml
+  ```
+
+
+## Others
+- To use an environment easily for notebooks, include a Jupyter kernel (`ipykernel` for Python or `irkernel` for R) in the environment
+  - What is a Jupyter kerner? it is a programming language-specific process that executes the code contained in a Jupyter notebook
+- We recommend the `conda-forge` channel for installing packages
+  - `conda-forge` channel is "a community led collection of recipes, build infrastructure and distributions for the conda package manager"
+  ```
+  $ conda install --channel conda-forge scipy=1.6
+  ```
+  - What are conda channels? URLs to directories containing conda packages
+  - the Anaconda managed channels are referred to as the `defaults` channel, it is where the packages are searched if you don't specify the channel
+  - We like `conda-forge` because:
+    - packages may be more up-to-date
+    - it includes additional packages not available in `defaults`
+

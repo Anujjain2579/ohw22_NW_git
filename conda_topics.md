@@ -96,6 +96,7 @@ Great resources:
 
   dependencies:
     - ipython
+    - ipykernel
     - matplotlib
     - pandas
     - pip
